@@ -1,1 +1,1 @@
-# promty
+# promty git commit --allow-empty -m "Commit message"
