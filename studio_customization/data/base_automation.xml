@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<odoo>
+  <record id="studio_customization.amz_precio_de_venta__02f1bed3-1dd1-46a2-8aba-0e9cc04c2a46" model="base.automation" context="{'studio': True}">
+    <field name="action_server_id" ref="studio_customization.amz_precio_de_venta__14c12b0d-5d01-4b8a-9f65-f9c093b9afa5"/>
+    <field name="active" eval="True"/>
+    <field name="filter_domain">[["x_studio_lista_de_precio","=","Precio 3"]]</field>
+    <field name="filter_pre_domain" eval="False"/>
+    <field name="last_run" eval="False"/>
+    <field name="on_change_field_ids" eval="[(6, 0, [])]"/>
+    <field name="trg_date_id" eval="False"/>
+    <field name="trg_date_range" eval="False"/>
+    <field name="trg_date_range_type" eval="False"/>
+    <field name="trigger">on_create_or_write</field>
+  </record>
+  <record id="studio_customization.amz_precio_de_venta__775e602a-3581-4d5b-bca5-07f498a8d05d" model="base.automation" context="{'studio': True}">
+    <field name="action_server_id" ref="studio_customization.amz_precio_de_venta__edb7a7e6-0247-43aa-8ccb-3a2176274619"/>
+    <field name="active" eval="True"/>
+    <field name="filter_domain">[["x_studio_lista_de_precio","=","Precio 5"]]</field>
+    <field name="filter_pre_domain" eval="False"/>
+    <field name="last_run" eval="False"/>
+    <field name="on_change_field_ids" eval="[(6, 0, [])]"/>
+    <field name="trg_date_id" eval="False"/>
+    <field name="trg_date_range" eval="False"/>
+    <field name="trg_date_range_type" eval="False"/>
+    <field name="trigger">on_create_or_write</field>
+  </record>
+  <record id="studio_customization.amz_precio_de_venta__83b4d9cc-1cda-4c03-a49b-f9903dbaefdb" model="base.automation" context="{'studio': True}">
+    <field name="action_server_id" ref="studio_customization.amz_precio_de_venta__38906171-d432-42b0-922e-2817f5e9468d"/>
+    <field name="active" eval="True"/>
+    <field name="filter_domain">[["x_studio_lista_de_precio","=","Precio 2"]]</field>
+    <field name="filter_pre_domain" eval="False"/>
+    <field name="last_run" eval="False"/>
+    <field name="on_change_field_ids" eval="[(6, 0, [])]"/>
+    <field name="trg_date_id" eval="False"/>
+    <field name="trg_date_range" eval="False"/>
+    <field name="trg_date_range_type" eval="False"/>
+    <field name="trigger">on_create_or_write</field>
+  </record>
+  <record id="studio_customization.amz_precio_de_venta__a1d3a947-3fd1-4d94-adf0-d06150b41aba" model="base.automation" context="{'studio': True}">
+    <field name="action_server_id" ref="studio_customization.amz_precio_de_venta__ef799513-aea5-4660-a79d-5f4cfeb4d1ce"/>
+    <field name="active" eval="True"/>
+    <field name="filter_domain">[["x_studio_lista_de_precio","=","Precio 4"]]</field>
+    <field name="filter_pre_domain" eval="False"/>
+    <field name="last_run" eval="False"/>
+    <field name="on_change_field_ids" eval="[(6, 0, [])]"/>
+    <field name="trg_date_id" eval="False"/>
+    <field name="trg_date_range" eval="False"/>
+    <field name="trg_date_range_type" eval="False"/>
+    <field name="trigger">on_create_or_write</field>
+  </record>
+</odoo>

@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<odoo>
+  <record id="contacts.menu_country_group" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="base.action_country_group"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Grupo de países</field>
+    <field name="parent_id" ref="contacts.menu_localisation"/>
+    <field name="sequence">3</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="contacts.menu_country_partner" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="base.action_country"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Países</field>
+    <field name="parent_id" ref="contacts.menu_localisation"/>
+    <field name="sequence">1</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="contacts.menu_country_state_partner" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="base.action_country_state"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Estados</field>
+    <field name="parent_id" ref="contacts.menu_localisation"/>
+    <field name="sequence">2</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="studio_customization.contactos_ubicacion_0248cf7c-b164-4ccf-9995-47f85528f6d5" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="studio_customization.ubicacion_b87ce33d-0f8f-4d41-bcca-c43f75b7b5ec"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Ubicación</field>
+    <field name="parent_id" ref="contacts.menu_localisation"/>
+    <field name="sequence" eval="False"/>
+    <field name="web_icon" eval="False"/>
+  </record>
+</odoo>

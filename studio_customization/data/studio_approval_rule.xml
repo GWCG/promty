@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<odoo>
+  <record id="studio_customization.asiento_contable_but_41b7ccfd-245b-4c09-b3e5-93d8aeb0c540" model="studio.approval.rule" context="{'studio': True}">
+    <field name="group_id" ref="__export__.res_groups_121_7388146f"/>
+    <field name="model_id" ref="account.model_account_move"/>
+    <field name="method">button_draft</field>
+    <field name="action_id" eval="False"/>
+    <field name="name">Asiento contable/button_draft (Contabilidad / Restablecer a borrador facturas) (12)</field>
+    <field name="message">Requieres autorización para cancelar la factura. Si deseas establecer como borrador, favor de solicitarla con el equipo de IT.</field>
+    <field name="exclusive_user" eval="False"/>
+    <field name="domain" eval="False"/>
+    <field name="can_validate" eval="True"/>
+  </record>
+  <record id="studio_customization.journal_entry_button_106814fc-ca67-4b69-b200-13b5f2fedc4a" model="studio.approval.rule" context="{'studio': True}">
+    <field name="group_id" ref="__export__.res_groups_110_8cc822db"/>
+    <field name="model_id" ref="account.model_account_move"/>
+    <field name="method">button_cancel</field>
+    <field name="action_id" eval="False"/>
+    <field name="name">Asiento de diario/button_cancel (Contabilidad / Cancelación Facturas) (6)</field>
+    <field name="message">Requieres autorización para cancelar la factura.</field>
+    <field name="exclusive_user" eval="False"/>
+    <field name="domain" eval="False"/>
+    <field name="can_validate" eval="True"/>
+  </record>
+  <record id="studio_customization.journal_entry_button_22161aec-8cca-4d5b-b09e-e14d496a0857" model="studio.approval.rule" context="{'studio': True}">
+    <field name="group_id" ref="__export__.res_groups_110_8cc822db"/>
+    <field name="model_id" ref="account.model_account_move"/>
+    <field name="method">button_cancel_posted_moves</field>
+    <field name="action_id" eval="False"/>
+    <field name="name">Asiento de diario/button_cancel_posted_moves (Contabilidad / Cancelación Facturas) (5)</field>
+    <field name="message">Requieres autorización para cancelar la factura.</field>
+    <field name="exclusive_user" eval="False"/>
+    <field name="domain" eval="False"/>
+    <field name="can_validate" eval="True"/>
+  </record>
+  <record id="studio_customization.journal_entry_button_d74b1a63-e7a5-4b37-8464-62e504504eaa" model="studio.approval.rule" context="{'studio': True}">
+    <field name="group_id" ref="__export__.res_groups_110_8cc822db"/>
+    <field name="model_id" ref="account.model_account_move"/>
+    <field name="method">button_draft</field>
+    <field name="action_id" eval="False"/>
+    <field name="name">Asiento contable/button_draft (Contabilidad / Cancelación Facturas) (7)</field>
+    <field name="message">Requieres autorización para cancelar la factura. Si deseas establecer como borrador, favor de solicitarla con el equipo de IT.</field>
+    <field name="exclusive_user" eval="False"/>
+    <field name="domain" eval="False"/>
+    <field name="can_validate" eval="True"/>
+  </record>
+  <record id="studio_customization.lead_opportunity_act_88ae37c2-5217-4e22-a22d-942d5fd2f88c" model="studio.approval.rule" context="{'studio': True}">
+    <field name="group_id" ref="__export__.res_groups_96_c10a9c2e"/>
+    <field name="model_id" ref="crm.model_crm_lead"/>
+    <field name="method">action_sale_quotations_new</field>
+    <field name="action_id" eval="False"/>
+    <field name="name">Lead/oportunidad/action_sale_quotations_new (OG ADMIN) (13)</field>
+    <field name="message">No puedes hacer una nueva cotización de una oportunidad ya confirmada.</field>
+    <field name="exclusive_user" eval="False"/>
+    <field name="domain">[['stage_id', '=', 'Confirmado']]</field>
+    <field name="can_validate" eval="True"/>
+  </record>
+  <record id="studio_customization.orden_de_venta_actio_1d9ad1dc-194d-428a-85ce-392497508daa" model="studio.approval.rule" context="{'studio': True}">
+    <field name="group_id" ref="__export__.res_groups_116_90579fe8"/>
+    <field name="model_id" ref="sale.model_sale_order"/>
+    <field name="method">action_cancel</field>
+    <field name="action_id" eval="False"/>
+    <field name="name">Orden de venta/action_cancel (Ventas / Grupo City Express) (11)</field>
+    <field name="message">Requieres autorización para cancelar la venta. Si deseas editar el pedido,  haz click en "editar" y notifica a las respectivas áreas. Si deseas dar de baja el pedido, favor de solicitarla con el equipo de IT.</field>
+    <field name="exclusive_user" eval="False"/>
+    <field name="domain" eval="False"/>
+    <field name="can_validate" eval="True"/>
+  </record>
+  <record id="studio_customization.orden_de_venta_actio_4f685099-cbdc-4edc-8562-a61bab70d561" model="studio.approval.rule" context="{'studio': True}">
+    <field name="group_id" ref="base.group_user"/>
+    <field name="model_id" ref="sale.model_sale_order"/>
+    <field name="method">action_confirm</field>
+    <field name="action_id" eval="False"/>
+    <field name="name">Orden de venta/action_confirm (Tipos de Usuario / Usuario interno) (2)</field>
+    <field name="message" eval="False"/>
+    <field name="exclusive_user" eval="False"/>
+    <field name="domain" eval="False"/>
+    <field name="can_validate" eval="True"/>
+  </record>
+  <record id="studio_customization.orden_de_venta_actio_7fb3ff9f-b3dd-444b-8c70-aaf1ce8b4a97" model="studio.approval.rule" context="{'studio': True}">
+    <field name="group_id" ref="base.group_user"/>
+    <field name="model_id" ref="sale.model_sale_order"/>
+    <field name="method">action_cancel</field>
+    <field name="action_id" eval="False"/>
+    <field name="name">Orden de venta/action_cancel (Tipos de usuario / Usuario interno) (10)</field>
+    <field name="message" eval="False"/>
+    <field name="exclusive_user" eval="False"/>
+    <field name="domain" eval="False"/>
+    <field name="can_validate" eval="True"/>
+  </record>
+  <record id="studio_customization.payments_action_canc_5d515063-edf1-4936-99b0-b8127b6ef65d" model="studio.approval.rule" context="{'studio': True}">
+    <field name="group_id" ref="__export__.res_groups_110_8cc822db"/>
+    <field name="model_id" ref="account.model_account_payment"/>
+    <field name="method">action_cancel</field>
+    <field name="action_id" eval="False"/>
+    <field name="name">Pagos/action_cancel (Contabilidad / Cancelación Facturas) (8)</field>
+    <field name="message" eval="False"/>
+    <field name="exclusive_user" eval="False"/>
+    <field name="domain" eval="False"/>
+    <field name="can_validate" eval="True"/>
+  </record>
+  <record id="studio_customization.payments_action_canc_5efd29c5-7ffc-4027-8f4b-c534afa5ae4c" model="studio.approval.rule" context="{'studio': True}">
+    <field name="group_id" ref="base.group_user"/>
+    <field name="model_id" ref="account.model_account_payment"/>
+    <field name="method">action_cancel</field>
+    <field name="action_id" eval="False"/>
+    <field name="name">Payments/action_cancel (User types / Internal User) (9)</field>
+    <field name="message" eval="False"/>
+    <field name="exclusive_user" eval="False"/>
+    <field name="domain" eval="False"/>
+    <field name="can_validate" eval="True"/>
+  </record>
+  <record id="studio_customization.sales_order_action_c_357074e2-8133-41e5-a3ed-9c920f3a62ed" model="studio.approval.rule" context="{'studio': True}">
+    <field name="group_id" ref="base.group_user"/>
+    <field name="model_id" ref="sale.model_sale_order"/>
+    <field name="method">action_confirm</field>
+    <field name="action_id" eval="False"/>
+    <field name="name">Sales Order/action_confirm (User types / Internal User) (1)</field>
+    <field name="message" eval="False"/>
+    <field name="exclusive_user" eval="False"/>
+    <field name="domain" eval="False"/>
+    <field name="can_validate" eval="True"/>
+  </record>
+  <record id="studio_customization.sales_order_action_c_35bffa3d-dd49-4a26-9cf1-5db639101792" model="studio.approval.rule" context="{'studio': True}">
+    <field name="group_id" ref="studio_customization.odoo_buddies_0bcc0163-4a5b-4363-93e7-7370b54e0948"/>
+    <field name="model_id" ref="sale.model_sale_order"/>
+    <field name="method">action_cancel</field>
+    <field name="action_id" eval="False"/>
+    <field name="name">Sales Order/action_cancel (Odoo Buddies) (4)</field>
+    <field name="message">Requieres autorización para cancelar la venta. Si deseas editar el pedido,  haz click en "editar" y notifica a las respectivas áreas. Si deseas dar de baja el pedido, favor de solicitarla con el equipo de IT.</field>
+    <field name="exclusive_user" eval="False"/>
+    <field name="domain" eval="False"/>
+    <field name="can_validate" eval="True"/>
+  </record>
+  <record id="studio_customization.sales_order_action_c_d932627e-5f57-4339-ae02-73842b2b66c6" model="studio.approval.rule" context="{'studio': True}">
+    <field name="group_id" ref="sales_team.group_sale_manager"/>
+    <field name="model_id" ref="sale.model_sale_order"/>
+    <field name="method">action_confirm</field>
+    <field name="action_id" eval="False"/>
+    <field name="name">Orden de venta/action_confirm (Ventas / Administrador) (3)</field>
+    <field name="message">Revisa la información completa del contacto para poder confirmar la venta. Si necesitas ayuda, comunícate con tu supervisor.</field>
+    <field name="exclusive_user" eval="False"/>
+    <field name="domain">[['x_studio_validacin_contacto', '=', False]]</field>
+    <field name="can_validate" eval="True"/>
+  </record>
+</odoo>
