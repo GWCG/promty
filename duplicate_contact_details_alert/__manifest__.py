@@ -3,7 +3,7 @@
 #
 #    Cybrosys Technologies Pvt. Ltd.
 #
-#    Copyright (C) 2022-TODAY Cybrosys Technologies(<https://www.cybrosys.com>)
+#    Copyright (C) 2024-TODAY Cybrosys Technologies(<https://www.cybrosys.com>)
 #    Author: Cybrosys Techno Solutions(<https://www.cybrosys.com>)
 #
 #    You can modify it under the terms of the GNU LESSER
@@ -21,9 +21,9 @@
 #############################################################################
 {
     'name': "Duplicate Contact Details Alert",
-    'version': '16.0.1.0.0',
-    'summary': """Duplicate Contact Details Alert""",
+    'version': '18.0.1.0.1',
     "category": 'Extra Tools',
+    'summary': """Duplicate Contact Details Alert""",
     'description': """Duplicate Contact Details Alert""",
     'author': 'Cybrosys Techno Solutions',
     'company': 'Cybrosys Techno Solutions',
@@ -36,6 +36,6 @@
     'images': ['static/description/banner.png'],
     'license': "LGPL-3",
     'installable': True,
-    'application': False,
     'auto_install': False,
+    'application': False,
 }

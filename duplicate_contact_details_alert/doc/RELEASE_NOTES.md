@@ -1,6 +1,11 @@
 ## Module <duplicate_contact_details_alert>
 
-#### 29.12.2022
-#### Version 16.0.1.0.0
+#### 30.10.2024
+#### Version 18.0.1.0.0
 #### ADD
-- Initial commit for Duplicate Contact Details Alert Module
+- Initial commit for Duplicate Contact Details Alert 
+
+#### 07.08.2025
+#### Version 18.0.1.0.1
+##### UPDT
+Commit for Bug fixing
